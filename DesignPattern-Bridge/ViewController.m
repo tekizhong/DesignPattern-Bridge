@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "TKTCLTV.h"
+#import "TKTCLRemoteControl.h"
+#import "TKChangHongTV.h"
+#import "TKChangHongTVRemoteControl.h"
 
 @interface ViewController ()
 
@@ -16,6 +20,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
+    TKTCLRemoteControl *tclRemoteControl = [[TKTCLRemoteControl alloc] init];
+    tclRemoteControl.tv = [[TKTCLTV alloc] init];
+    [tclRemoteControl voiceAdd];
+    [tclRemoteControl voiceMinus];
+    [tclRemoteControl channelAdd];
+    [tclRemoteControl channelMinus];
+    
+    
+    TKChangHongTVRemoteControl *changhongRemoteControl = [[TKChangHongTVRemoteControl alloc] init];
+    changhongRemoteControl.tv = [[TKChangHongTV alloc] init];
+    [changhongRemoteControl voiceAdd];
+    [changhongRemoteControl voiceMinus];
+    [changhongRemoteControl channelAdd];
+    [changhongRemoteControl channelMinus];
+    [changhongRemoteControl sleepMode];
+    [changhongRemoteControl normalMode];
+    [changhongRemoteControl voiceMute];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

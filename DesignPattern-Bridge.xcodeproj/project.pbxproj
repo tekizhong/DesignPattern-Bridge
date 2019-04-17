@@ -15,6 +15,12 @@
 		97FF5C7E2265732600D38B3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FF5C7D2265732600D38B3E /* main.m */; };
 		97FF5C882265732600D38B3E /* DesignPattern_BridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FF5C872265732600D38B3E /* DesignPattern_BridgeTests.m */; };
 		97FF5C932265732600D38B3E /* DesignPattern_BridgeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FF5C922265732600D38B3E /* DesignPattern_BridgeUITests.m */; };
+		97FF5CA4226575CA00D38B3E /* TVRemoteControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FF5CA3226575CA00D38B3E /* TVRemoteControl.m */; };
+		97FF5CA7226575EA00D38B3E /* TKTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FF5CA6226575EA00D38B3E /* TKTV.m */; };
+		97FF5CAA2265784D00D38B3E /* TKTCLTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FF5CA92265784D00D38B3E /* TKTCLTV.m */; };
+		97FF5CAD22657B0000D38B3E /* TKChangHongTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FF5CAC22657B0000D38B3E /* TKChangHongTV.m */; };
+		97FF5CB022657E3300D38B3E /* TKChangHongTVRemoteControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FF5CAF22657E3300D38B3E /* TKChangHongTVRemoteControl.m */; };
+		97FF5CB322657E4400D38B3E /* TKTCLRemoteControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FF5CB222657E4400D38B3E /* TKTCLRemoteControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,18 @@
 		97FF5C8E2265732600D38B3E /* DesignPattern-BridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DesignPattern-BridgeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97FF5C922265732600D38B3E /* DesignPattern_BridgeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPattern_BridgeUITests.m; sourceTree = "<group>"; };
 		97FF5C942265732600D38B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97FF5CA2226575CA00D38B3E /* TVRemoteControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVRemoteControl.h; sourceTree = "<group>"; };
+		97FF5CA3226575CA00D38B3E /* TVRemoteControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVRemoteControl.m; sourceTree = "<group>"; };
+		97FF5CA5226575EA00D38B3E /* TKTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTV.h; sourceTree = "<group>"; };
+		97FF5CA6226575EA00D38B3E /* TKTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTV.m; sourceTree = "<group>"; };
+		97FF5CA82265784D00D38B3E /* TKTCLTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTCLTV.h; sourceTree = "<group>"; };
+		97FF5CA92265784D00D38B3E /* TKTCLTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTCLTV.m; sourceTree = "<group>"; };
+		97FF5CAB22657B0000D38B3E /* TKChangHongTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKChangHongTV.h; sourceTree = "<group>"; };
+		97FF5CAC22657B0000D38B3E /* TKChangHongTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKChangHongTV.m; sourceTree = "<group>"; };
+		97FF5CAE22657E3300D38B3E /* TKChangHongTVRemoteControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKChangHongTVRemoteControl.h; sourceTree = "<group>"; };
+		97FF5CAF22657E3300D38B3E /* TKChangHongTVRemoteControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKChangHongTVRemoteControl.m; sourceTree = "<group>"; };
+		97FF5CB122657E4400D38B3E /* TKTCLRemoteControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTCLRemoteControl.h; sourceTree = "<group>"; };
+		97FF5CB222657E4400D38B3E /* TKTCLRemoteControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTCLRemoteControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +121,8 @@
 			children = (
 				97FF5C6E2265732400D38B3E /* AppDelegate.h */,
 				97FF5C6F2265732400D38B3E /* AppDelegate.m */,
+				97FF5CA12265757000D38B3E /* Implementor */,
+				97FF5CA02265755300D38B3E /* Abstraction */,
 				97FF5C712265732400D38B3E /* ViewController.h */,
 				97FF5C722265732400D38B3E /* ViewController.m */,
 				97FF5C742265732400D38B3E /* Main.storyboard */,
@@ -130,6 +150,32 @@
 				97FF5C942265732600D38B3E /* Info.plist */,
 			);
 			path = "DesignPattern-BridgeUITests";
+			sourceTree = "<group>";
+		};
+		97FF5CA02265755300D38B3E /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				97FF5CA2226575CA00D38B3E /* TVRemoteControl.h */,
+				97FF5CA3226575CA00D38B3E /* TVRemoteControl.m */,
+				97FF5CAE22657E3300D38B3E /* TKChangHongTVRemoteControl.h */,
+				97FF5CAF22657E3300D38B3E /* TKChangHongTVRemoteControl.m */,
+				97FF5CB122657E4400D38B3E /* TKTCLRemoteControl.h */,
+				97FF5CB222657E4400D38B3E /* TKTCLRemoteControl.m */,
+			);
+			path = Abstraction;
+			sourceTree = "<group>";
+		};
+		97FF5CA12265757000D38B3E /* Implementor */ = {
+			isa = PBXGroup;
+			children = (
+				97FF5CA5226575EA00D38B3E /* TKTV.h */,
+				97FF5CA6226575EA00D38B3E /* TKTV.m */,
+				97FF5CA82265784D00D38B3E /* TKTCLTV.h */,
+				97FF5CA92265784D00D38B3E /* TKTCLTV.m */,
+				97FF5CAB22657B0000D38B3E /* TKChangHongTV.h */,
+				97FF5CAC22657B0000D38B3E /* TKChangHongTV.m */,
+			);
+			path = Implementor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97FF5CA7226575EA00D38B3E /* TKTV.m in Sources */,
 				97FF5C732265732400D38B3E /* ViewController.m in Sources */,
+				97FF5CB022657E3300D38B3E /* TKChangHongTVRemoteControl.m in Sources */,
 				97FF5C7E2265732600D38B3E /* main.m in Sources */,
+				97FF5CB322657E4400D38B3E /* TKTCLRemoteControl.m in Sources */,
 				97FF5C702265732400D38B3E /* AppDelegate.m in Sources */,
+				97FF5CAA2265784D00D38B3E /* TKTCLTV.m in Sources */,
+				97FF5CA4226575CA00D38B3E /* TVRemoteControl.m in Sources */,
+				97FF5CAD22657B0000D38B3E /* TKChangHongTV.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
